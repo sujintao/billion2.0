@@ -47,6 +47,9 @@ Vue.component(CellItem.name, CellItem)
 import {Button, ButtonGroup} from 'vue-ydui/dist/lib.rem/button'
 Vue.component(Button.name, Button)
 Vue.component(ButtonGroup.name, ButtonGroup)
+// input
+import {Input} from 'vue-ydui/dist/lib.rem/input'
+Vue.component(Input.name, Input)
 /****************************测试**********/
 // import urlUtil from '~/api/urlprofile'
 // let params = {

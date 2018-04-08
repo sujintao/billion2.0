@@ -4,6 +4,8 @@ import home from '../pages/views/home.vue'
 import detailview from '../pages/views/detailview.vue'
 import explain from '../pages/views/explain.vue'
 import person from '../pages/views/person.vue'
+/* 二级页面 */
+import login from '../pages/subview/login.vue'
 
 
 export default new VueRouter({
@@ -27,6 +29,12 @@ export default new VueRouter({
             path: '/person',
             name:'person',
             component: person,
+
+        }, 
+        {
+            path: '/login',
+            name:'login',
+            component: login,
 
         }, 
         //登录空白页
