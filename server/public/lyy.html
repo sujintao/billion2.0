@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script src="https://cdn.bootcss.com/moment.js/2.19.0/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.2/axios.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="./base64.js"></script>
+</head>
+<script>
+    /* $(function () {
+        $("#btn").click((val) => {
+            // console.log('sdfsdf')
+            // axios.post('/sms/', { 'phone': 15005917819 })
+            //     .then( (obj)=> {
+
+            //     })
+
+            axios.delete('http://114.55.7.22:8899/nanguo/api/testapi/5a0e5066fe8afb0deb587706', { name: 'test', num: '100' }).then(res => {
+                console.log(res)
+
+            })
+
+        })
+    }) */
+    // .then(function (obj) {
+    // console.log(obj)
+    // }).catch(function (error) { console.log('出错啦aaa', error); })
+    // $(function () {
+    //     $("#btn").click(function () {
+    //         // .catch(function(error) { console.log('出错啦aaa', error); }) 
+    //         // axios.delete('http://app.bullstech.cn/test/api/lyy/59ffd0a578143a5428f04a6f')
+    //         // .then(function (obj) {
+    //         //    console.log(obj)
+    //         // })
+    //         // .catch(function(error) { console.log('出错啦aaa', error); }) 
+
+    //         // axios.get('http://app.bullstech.cn/login',)
+    //         //     .then(function (obj) {
+    //         //        console.log('success')
+    //         // })
+    //         // let instance = axios.created({
+    //         //     url:'http://v1.api.upyun.com/wxnanguo/',
+    //         //     // baseURL: 'http://v0.api.upyun.com/wxnanguo/',
+    //         //     method: 'put',
+    //         //     data:{
+    //         //         file:'2813c2ce9c96a77c4d6081e59802b0e1s'
+    //         //     },
+    //         //     headers: {
+    //         //         'Authorization': 'UPYUN nanguopc:79a71245dc417ed57bdd2343de3639a2',
+    //         //         'Content-MD5': '7ac66c0f148de9519b8bd264312c4d64',
+    //         //         'Date': new Date(),
+    //         //         'Content-Type': 'image/jpeg',
+    //         //         'Host': 'v0.api.upyun.com',
+    //         //         'Content-Length': 33456
+    //         //     }
+    //         // let length = file.length
+    //         // console.log(length)
+    //         // let auth = null
+    //         // let byte = file[0].size 
+    //         // console.log('file[0]',file[0],byte)
+
+    //         // let content_length = JSON.stringify(file).length
+    //         // console.log('124',content_length)
+    //         // let listname = moment().format('YYYYMMDD')
+    //         // let filename = moment().format('hmmss')
+    //         // let url = '/nanguo/' + listname + '/' + filename
+    //         axios.get('http://127.0.0.1:8899/test/api/lyy').then(res => {
+    //             console.log(res)
+    //             // axios.post('http://127.0.0.1:8899/test/api/lyy', { 'shagua': '123456' }).then(val => {
+    //             //     console.log(val, 'dddedd')
+
+    //             // }).catch(obj => {
+    //             //     console.log(obj, '111')
+    //             // })
+
+    //         })
+    //     })
+    // })
++
+    $("#btn").click(console.log('ok'))
+
+    let urlpage = 0;         //当前页内容
+    let urlprepage = 10;       //页面显示数量
+    let urlfilter = [];        //
+    let urlfiltrateobj = {   //过滤条件
+        index: null,          //下标
+        oid: null,            ///筛选条件的oid
+        sid: null,            //筛选完成后的sid
+    }
+    let urldb = [
+        {//查询的第一个库名表名
+            'db': 'runoob',     //   查询的库名
+            'table':'sites',    //  查询的表名
+    'a': urlfilter,     //  
+    'b': urlfiltrateobj  //   传入的筛选oid     
+   },
+    {//查询的第二个库名表名
+        'db': 'runoob',
+        'table': 'site',
+            'a': urlfilter,
+   },
+            ]
+    let urlobj = {//传入接口的参数
+        page: urlpage,         //当前页面的数据
+        prepage: urlprepage,   //页面显示数量
+        dball: urldb,         // 查询的数据信息
+        s: true               //标示
+            }
+    // 将请求进行编码
+    let filterstr = BASE64.encoder(JSON.stringify(urlobj))
+    let url = '?q=' + filterstr
+
+
+    console.log(1231321312321);
+</script>
+
+<body>
+    <div>
+
+    </div>
+    <div style="height:40px;">
+        url:
+        <input type="txt" id="url" style="width:320px;" />
+    </div>
+    <div style="height:40px;">
+        type:
+        <select name="select" id="posttype">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+    </div>
+    <div>
+        data
+        <textarea id="data" cols="20" rows="5" style="width:320px;"></textarea>
+    </div>
+    <div style="height:40px;">
+        <input type="button" id="btn" value="submit" o />
+        <input type="button" id="post" value="post" />
+    </div>
+    <div></div>
+    <button id="btn">12315</button>
+</body>
+
+</html>

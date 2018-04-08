@@ -1,0 +1,37 @@
+    图标说明文档
+
+1、back.vue        返回图标      iconBack 
+2、bind.vue        绑定图标      iconBind
+3、choose.vue      筛选图标      iconChoose
+4、collect.vue     收藏图标      iconCollect
+5、doctor.vue      博士帽图标    iconDoctor
+6、evaluation.vue  评价图标      iconEvaluation
+7、idea.vue        意见图标      iconIdea
+8、location.vue    定位图标      iconLocation
+9、message.vue     消息图标      iconMessage
+10、order.vue      订单图标      iconOrder
+11、questions.vue  提问图标      iconQuestions
+12、set.vue        设置图标      iconSet
+13、star.vue       星星图标      iconStar
+14、test.vue       测试图标      iconTest
+15、video.vue      电影图标      iconVideo
+16、works.vue      作品图标      iconWorks
+17、like.vue       详情收藏图标   iconLike
+18、share.vue      分享图标      iconShare
+19、phonecall.vue  拨打电话图标   iconPhonecall
+20、service.vue    客服图标      iconService
+22、vertical.vue   竖线          iconVertical
+23、tick.vue       打勾          iconTick
+24、arrowup      向上绿色箭头     iconArrowup
+25、arrowbottom  向下灰色箭头     iconArrowbottom
+24、right.vue      向右>         iconRight
+25、like-white.vue 白色详情收藏图标  iconLikeWhite
+26、service-white  白色客服图标    iconServiceWhite
+27、aplipay.vue    蓝色支付宝图标   iconAlipay
+28、dot.vue        圆点图标        iconDot
+29、add.vue        加号图标    iconAdd
+30、WeChatPay.vue  微信支付图标    iconWechatPay
+31、pencil.vue     铅笔图标        iconPencil
+32、tick-small.vue  小型打勾       iconTickSmall
+33、checkBox.vue   正方形复选框(未选)  iconCheck
+34、checkedBox.vue 正方形复选框(已选)  iconChecked

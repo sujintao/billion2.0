@@ -1,0 +1,59 @@
+11月6号至12号工作计划表
+主要工作内容：完成页面数据，通用功能
+周一配置，设计数据表结构，配置数据模型
+    lyy{
+        上传图片和文件
+    }
+    taotao{
+        机构详情表  org
+        品牌介绍  brabch
+        荣誉表   honor
+        名师 teacher
+        课程  lesson
+        活动 act
+    }
+    yanru
+    {
+        评论表  discuss
+        回复表  reply
+        图片表 images
+        视频表 vedio
+        班级信息  class 
+        作品表 product
+    }
+    shaoming{
+        我的订单表  myorder
+        收藏表  collect
+        学生表  student
+        用户表 user
+        海报表  banner
+    }
+周二配置后台模板，菜单模块
+taotao{
+        机构详情表  org
+        品牌介绍  brabch
+        荣誉表   honor
+        名师 teacher
+        课程  lesson
+        活动 act
+    }
+    yanru
+    {
+        评论表  discuss
+        回复表  reply
+        图片表 images
+        视频表 vedio
+        班级信息  class 
+        作品表 product
+    }
+    shaoming{
+        我的订单表  myorder
+        收藏表  collect
+        学生表  student
+        用户表 user
+        海报表  banner
+    }
+周三配置，设计页面数据，添加路由功能
+    人员分配根据周二工作情况分配
+周四上 页面数据，简单功能
+周五 通用功能模块

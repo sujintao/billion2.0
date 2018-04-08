@@ -1,0 +1,258 @@
+机构详情表  org
+品牌介绍  brabch
+荣誉表   honor
+名师 teacher
+课程  lesson
+活动 act
+评论表  discuss
+回复表  reply
+图片表 images
+视频表 vedio
+班级信息  class 
+作品表 product
+我的订单表  myorder
+收藏表  collect
+学生表  student
+用户表 user
+海报表  banner
+、、、、、、、、、、、
+机构老师
+点评老师
+
+课程
+机构
+活动
+{
+    banner
+}
+、、、、、、、、、、、
+数据名规则
+数组类属于数字字典类，
+_id      :主键（不用填写）
+一般后面加s基本为数字字段 
+
+
+app基本功能
+
+    10条数据  下拉刷新
+    图片懒加载 功能
+    手势tab
+    绑定qq  wx  wb等 授权后登录直接登录（第一次除外）
+    route带id id即为主键
+    登录（注册）
+    手机验证
+    支付
+    收藏
+    分享
+    订单
+
+
+
+org(机构列表)
+{
+    _id      :主键（不用填写）
+   orgimg_id  ：机构头像
+   title     ：机构名
+   score     ：评分
+   label_id  ：标签分类（数组）
+   addr      ：机构地址
+}
+
+brabch(品牌介绍)
+{
+    _id      :主键
+    content  ：内容。品牌故事
+    tag_id   ：标签（数组）
+    server_id   ：服务特色（数组）
+    envir_id    ：中心环境（数组）
+    org_id      :机构id
+}
+
+ honor（品牌荣誉 ）
+ {
+     _id  ：主键
+     content ：内容
+    brabch_id  :品牌id
+ }
+
+teacher(老师表 名师点评)
+{
+    _id   :主键
+    title  ：老师名
+    teacherimg_id   ：老师头像
+    labelimg_id  ：标签头像
+    rroducts ：点评作品数
+    views ：观看次数
+    content ：名师简介
+    price  ：现价
+    preprice ：原价
+    org_id    :机构id
+}
+
+lesson（课程）
+{
+    _id    :主键
+    title  ：课程名
+    score  ：课程评分
+    lessonimg_id  ：课程图片
+    learneds  ：多少人学过
+    preprice  ：原价
+    price     ：现价
+    time      ：课程时间
+    apply_id     ：课程适用人群(数组)
+    content   ：课程介绍
+    class_id     ：班级信息
+    apt_time  : 预约时间
+    apt_lessontime : 预约上课时间
+    apt_lessonnum  :预约人数
+    apt_lessonhour ：预约课时
+    org_id  :机构id
+    teacher_id :老师id
+ 
+}
+
+images（图片表）
+{
+    _id  主键
+    type  表名
+    url   字段
+    sort  排序
+    show  是否显示
+    link_id  链接表
+}
+
+class（班级信息）{
+    _id   :主键
+    peoples  上课人数
+    classtime  上课时间
+    class hour  学时 课时
+    lesson_id   　
+}
+
+act（活动）
+{
+    _id     :主键
+    title  主标题
+    remark  副标题
+    imageurl 活动图片
+    score   评分
+    time    活动时间
+    addr   活动地址
+    preprice 原价
+    price   现价
+    applys  报名人数
+    intro   活动介绍
+    tel    联系方式
+    description 购买说明
+}
+
+product（作品表）
+{
+    _id      :主键
+    status   ：状态（先不写）
+    title  ：作品名字
+    times   ：作品时长
+    commenter ：点评人
+    plays   播放次数
+    browsers  ：浏览次数
+    teacher_id 老师id
+    recommend   ：是否推荐
+
+}
+
+reproduct_id(原始作品表)
+{
+    _id  :主键
+    author     ：作者
+    title  ：作品名字
+    times   ：作品时长
+    plays   播放次数
+    browsers  ：浏览次数
+    reprovedio_id  :原始视频
+}
+
+discuss  （评论表）
+{
+    _id      :主键
+    count ：条数
+    imageurl ：评价人图像
+    time   ：评价时间
+    score   ：评价打分
+    content ：评价内容
+    browsers ：浏览次数
+    buyershow  ：买家秀
+    type   判断是4表中那块
+    link_id  链接表
+    user_id  用户id
+
+}
+
+reply(回复表)
+{
+    _id  :主键
+    content  ：评论内容
+    discuss_id  评论id
+    user_id   用户id
+}
+
+vedio（视频表）
+{
+    _id  主键
+    type  表名
+    url   字段
+    sort  排序
+    show  是否显示
+    link_id  链接表
+}
+
+myorder（我的订单表）
+{
+    _id  主键
+    type  ：类型
+    link_id 链接表
+    distype 评价状态
+    paytype 支付状态
+    user_id  用户id
+    reel  ：订单卷码
+    validdate  有效日期
+    number     订单编号
+    paydate           付款时间
+    consumedate           消费时间
+    total        订单总价
+}
+
+collect（收藏表）
+{
+    _id  主键
+    type  4表类型
+    link_id  接连那块表
+    user_id  关联用户id
+    ect 是否被收藏
+}
+
+
+user（用户）
+{
+    _id  主键
+    name 昵称（用户名）
+    birthdate 生日日期
+    tel  账号（手机）
+    pwd  密码
+    qquid  
+    wxuid
+    wbuid
+    forbidden  是否禁用
+}
+
+student（学生表）
+{
+    name  报名人
+    sex   性别
+     birthdate 生日日期
+     tel  联系方式
+     user_id  用户id
+
+}
+
+
+
