@@ -1,0 +1,141 @@
+
+/* 页面通用样式 */
+html{
+  /* font-size: 62.5% !important; */
+  margin:0;
+  padding:0;
+  overflow: hidden !important; 
+  
+}
+.demo-infinite-container{
+  width: 100%;
+  height: 99%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     height: 100%; 
+     font-size:1rem !important;
+      -webkit-font-smoothing:auto !important;
+  }
+::-webkit-scrollbar  
+  {  
+      width: 0;  
+      height: 0;  
+      background-color: #F5F5F5;  
+  }   
+
+a{
+  color:rgb(97,98,98); 
+  text-decoration: none;
+}
+ul,li{ 
+  list-style-type:none;
+}
+.text-center{
+  text-align: center;
+}
+.float_right{
+  float:right;
+}
+.tabslist {
+  border-bottom: 1px solid #eeeeee;
+}
+.tablistestitem_active {
+  color: #2bc17a !important;
+}
+/* 图片响应式 */
+.img-responsive{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+button{
+  background-color: transparent;
+  border:none;
+  outline: none;
+}
+/* 页面通用样式结束 */
+
+
+.demo-grid .top  div[class*="col-"] {
+    background: #fff;
+    color: #000 ;
+    padding: 8px;
+    height: 50px;
+  }
+  .demo-grid  div[class*="col-"] {
+    color: #000;
+   
+  }
+  .bg-grays{
+    background-color: rgb(238, 238, 238) !important;
+}
+.demo-grid .topmore  div[class*="col-"] {
+  color: #383838;
+  /* margin: 0 0.3rem 0.5rem; */
+  padding: 0 0.2rem;
+}
+.marginbom{
+  margin-bottom: 1rem;
+}
+/* 搜索框样式 */
+/* .search_fixed{
+  position: fixed;
+  top: 0;
+  background-color: rgb(236, 235, 235)
+} */
+
+
+.manageApply_footer_btn{
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(38, 171, 107);
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+  border:none;
+}
+.mask {
+  position: absolute;
+  top: 3.6rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  z-index: 100;
+  background: rgb(236, 235, 235);
+}
+/* 遮罩层 */
+.modal_icon{
+  padding-bottom:.2rem
+}
+.modal_share{
+padding:1rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+    margin-bottom: .5rem;
+}
+.modal_cancel{
+   margin-bottom: 0.1rem;
+  padding:1rem;
+  font-size: 1.5rem;
+    background: #f5f5f5;
+     border-radius: 10px;
+}
+.modal_footer {
+ padding:.4rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+.lessonDetails_modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 53, 53, 0.8);
+  z-index: 1100;
+  top: 0 !important;
+  left: 0 !important;
+}
